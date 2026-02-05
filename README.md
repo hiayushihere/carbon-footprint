@@ -79,7 +79,7 @@ ___
 ## 1. Clone Repository
 
 ```
-git clone <repo-url>
+git clone https://github.com/hiayushihere/carbon-footprint
 cd carbon-footprint-calculator-tracker
 ```
 
@@ -95,9 +95,10 @@ npm install
 Create `.env`:
 
 ```
-PORT=5000
+PORT=5001
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+GEMINI_API_KEY=your_gemini_api_key
 ```
 
 Start server:
@@ -175,3 +176,4 @@ ___
 ## Summary
 
 A portable, environment-agnostic carbon tracking platform built with modern web technologies. The system integrates data analytics and AI to provide actionable climate impact insights.
+
