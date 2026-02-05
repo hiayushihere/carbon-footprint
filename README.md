@@ -1,52 +1,177 @@
-# Carbon Footprint Calculator & Tracker 🌱
+#  Carbon Footprint Calculator & Tracker
 
-## 📌 Problem Statement
-Climate change is one of the most pressing challenges today. Individuals and small businesses often lack simple tools to track their daily carbon emissions and receive actionable guidance to reduce their environmental impact.
+A full-stack web application that helps individuals track daily carbon emissions, visualize impact trends, and receive AI-powered sustainability recommendations.
 
-This project is a web-based application that allows users to log daily activities such as transportation, energy usage, and diet, calculate their carbon footprint, visualize trends, and receive AI-powered personalized recommendations to reduce emissions.
+___
 
----
+## Overview
 
-## 🚀 Features
-- User authentication (registration & login)
+This system allows users to log lifestyle activities and automatically calculate their carbon footprint using standardized emission factors. The platform combines data tracking, analytics, and AI guidance to promote environmentally conscious decisions.
+
+The project demonstrates a production-style full-stack architecture with authentication, data persistence, analytics, and AI integration.
+
+___
+
+## Core Features
+
+- User authentication (JWT-based)
 - Daily activity logging (transport, energy, diet)
-- Carbon emission calculation using standard formulas
-- Visual dashboard with charts and trends
-- AI-powered personalized recommendations
-- Responsive design (mobile & desktop)
+- Carbon emission calculation engine
+- Interactive dashboard with charts
+- AI-generated sustainability recommendations
+- Profile management
+- Responsive UI
 
----
+___
 
-## 🛠️ Tech Stack
-**Frontend:** React, Tailwind CSS, Chart.js  
-**Backend:** Node.js, Express  
-**Database:** MongoDB  
-**Authentication:** JWT  
-**AI Integration:** OpenAI / Gemini API  
+## Tech Stack
 
----
+**Frontend** → React, Vite, Tailwind CSS, Chart.js  
+**Backend** → Node.js, Express  
+**Database** → MongoDB  
+**Authentication** → JWT  
+**AI Integration** → OpenAI / Gemini API  
 
-## 📊 Carbon Calculation Logic (Sample)
-- Car (petrol): Distance (km) × 0.12
-- Flight (short-haul): Distance (km) × 0.255
-- Electricity: kWh × 0.5
-- Beef meal: 6.0 kg CO₂
-- Vegetarian meal: 1.5 kg CO₂
+___
 
----
+## Carbon Calculation Logic
 
-## 📁 Project Structure
+| Activity | Formula |
+|----------|---------|
+| Car (petrol) | `distance_km × 0.12` |
+| Flight (short-haul) | `distance_km × 0.255` |
+| Electricity | `kWh × 0.5` |
+| Beef meal | `6.0 kg CO₂` |
+| Vegetarian meal | `1.5 kg CO₂` |
+
+___
+
+## Project Structure
+
+```
 carbon-footprint-calculator-tracker/
 ├── frontend/
 ├── backend/
 ├── docs/
-├── README.md
-├── SUBMISSION.txt
+└── README.md
+```
 
+___
 
----
+## Installation & Setup
 
-## 📌 Future Enhancements
-- Carbon offset suggestions
+### Prerequisites
+
+- Node.js v18+
+- Git
+- MongoDB (Atlas or local)
+
+Verify:
+
+```
+node -v
+npm -v
+git --version
+```
+
+___
+
+## 1. Clone Repository
+
+```
+git clone <repo-url>
+cd carbon-footprint-calculator-tracker
+```
+
+___
+
+## 2. Backend Setup
+
+```
+cd backend
+npm install
+```
+
+Create `.env`:
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+Start server:
+
+```
+npm run dev
+```
+
+Backend runs at:
+
+```
+http://localhost:5000
+```
+
+___
+
+## 3. Frontend Setup
+
+```
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+___
+
+## Authentication Flow
+
+1. User registers  
+2. Login returns JWT  
+3. Token stored in `localStorage`  
+4. Protected routes use Bearer token  
+5. Profile fetched via `/users/me`
+
+___
+
+## API Routes
+
+| Endpoint | Description |
+|----------|-------------|
+| `/api/auth/register` | Register user |
+| `/api/auth/login` | Login user |
+| `/api/users/me` | Get profile |
+| `/api/activities` | Log activity |
+| `/api/recommendations` | AI suggestions |
+
+___
+
+## Common Issues
+
+| Problem | Cause |
+|---------|------|
+| Login fails | Missing `.env` |
+| Network error | Backend not running |
+| Profile not loading | JWT not sent |
+| User not saved | Incorrect Mongo URI |
+
+___
+
+## Future Improvements
+
+- Carbon offset marketplace
 - Community challenges
-- Advanced emission forecasting
+- Emission forecasting
+- Gamification
+
+___
+
+## Summary
+
+A portable, environment-agnostic carbon tracking platform built with modern web technologies. The system integrates data analytics and AI to provide actionable climate impact insights.
