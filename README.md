@@ -80,7 +80,7 @@ ___
 
 ```
 git clone https://github.com/hiayushihere/carbon-footprint
-cd carbon-footprint-calculator-tracker
+cd carbon-footprint
 ```
 
 ___
@@ -110,7 +110,7 @@ npm run dev
 Backend runs at:
 
 ```
-http://localhost:5000
+http://localhost:5001
 ```
 
 ___
@@ -176,4 +176,5 @@ ___
 ## Summary
 
 A portable, environment-agnostic carbon tracking platform built with modern web technologies. The system integrates data analytics and AI to provide actionable climate impact insights.
+
 
