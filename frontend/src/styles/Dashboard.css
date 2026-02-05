@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary: #0ea5a4;
+  --accent: #38bdf8;
+  --bg-main: #f8fafc;
+  --bg-soft: #eef2f7;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-soft: rgba(15, 23, 42, 0.08);
+}
+
+* {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Page */
+.dashboard-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, #ccfbf1, transparent 45%),
+    radial-gradient(circle at bottom right, #e0f2fe, transparent 45%),
+    linear-gradient(180deg, var(--bg-main), var(--bg-soft));
+  padding: 32px 16px;
+}
+
+/* Container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.dashboard-header h1 {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  color: var(--text-main);
+}
+
+.dashboard-header p {
+  margin-top: 6px;
+  color: var(--text-muted);
+  max-width: 520px;
+}
+
+/* Profile */
+.profile-btn {
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-btn:hover {
+  filter: brightness(1.05);
+}
+
+/* KPI */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.kpi-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+.kpi-card h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-muted);
+}
+
+.kpi-card p {
+  margin-top: 6px;
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+/* Sections */
+.dashboard-section {
+  margin-top: 8px;
+}
+
+/* Charts */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+}
+
+.chart-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+.chart-card h3 {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-header h1 {
+    font-size: 26px;
+  }
+
+  .kpi-card p {
+    font-size: 28px;
+  }
+}
