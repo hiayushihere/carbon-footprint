@@ -4,7 +4,7 @@ CARBON FOOTPRINT AI TRACKER — SUBMISSION
 
 Name: Ayushi Singh  
 Project Title: AI-Powered Carbon Footprint Calculator & Sustainability Tracker  
-GitHub Repository: [PASTE YOUR GITHUB REPO LINK HERE]
+GitHub Repository: https://github.com/hiayushihere/carbon-footprint
 
 --------------------------------------------------
 DELIVERABLE LINKS
@@ -74,3 +74,4 @@ NOTES
 --------------------------------------------------
 
 Thank you .
+
