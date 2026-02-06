@@ -1,0 +1,76 @@
+===============================
+CARBON FOOTPRINT AI TRACKER — SUBMISSION
+===============================
+
+Name: Ayushi Singh  
+Project Title: AI-Powered Carbon Footprint Calculator & Sustainability Tracker  
+GitHub Repository: [PASTE YOUR GITHUB REPO LINK HERE]
+
+--------------------------------------------------
+DELIVERABLE LINKS
+--------------------------------------------------
+
+1. Video Demo 
+PFA attached video link:  
+
+https://drive.google.com/file/d/1p935dQ7rNbtamF7_YjtndyBuRMJvBbdl/view?usp=sharing
+
+2. Problem Statement Document (PDF)  
+PFA attached document link:  
+
+https://drive.google.com/file/d/1DFDcgBTaAJmSZfcAtMhkOHumgBZlyu0C/view?usp=sharing
+
+3. AI Usage Report (PDF)  
+PFA attached document link:  
+
+https://drive.google.com/file/d/1sC92ce4VSuSfZOTW_GT54Fe17H8_mwVh/view?usp=sharing
+
+--------------------------------------------------
+SYSTEM OVERVIEW
+--------------------------------------------------
+
+This project builds an AI-powered Carbon Footprint Tracking system that:
+
+• Allows users to log daily activities (transport, energy, diet)  
+• Calculates CO₂ emissions using standardized emission factors  
+• Stores and manages activity data securely  
+• Provides emission breakdown by category  
+• Visualizes trends using interactive charts  
+• Generates AI-powered sustainability recommendations  
+• Compares daily, weekly, and monthly emission patterns  
+
+--------------------------------------------------
+AI COMPONENT
+--------------------------------------------------
+
+Generative AI Recommendations → OpenAI / Gemini API  
+
+AI is used to:
+
+• Analyze user emission patterns  
+• Identify high-impact lifestyle areas  
+• Generate personalized sustainability advice  
+• Translate emission data into actionable eco-friendly suggestions  
+
+--------------------------------------------------
+TECH STACK
+--------------------------------------------------
+
+Frontend → React, Vite, Tailwind CSS, Chart.js  
+Backend → Node.js, Express  
+Database → MongoDB  
+Authentication → JWT  
+AI Integration → Gemini API 
+
+--------------------------------------------------
+NOTES
+--------------------------------------------------
+
+• Carbon calculations are rule-based and deterministic  
+• AI is used only for insights and recommendations  
+• No personal or sensitive data is shared with AI  
+• The system is environment-agnostic and runs via .env configuration  
+
+--------------------------------------------------
+
+Thank you .
