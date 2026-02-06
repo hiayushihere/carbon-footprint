@@ -131,6 +131,7 @@ http://localhost:5173
 
 ___
 
+
 ## Authentication Flow
 
 1. User registers  
@@ -152,6 +153,29 @@ ___
 | `/api/recommendations` | AI suggestions |
 
 ___
+--------------------------------------------------
+## DELIVERABLE LINKS (also attached in submission.txt)
+--------------------------------------------------
+
+1. Video Demo
+
+PFA attached video link:  
+
+https://drive.google.com/file/d/1p935dQ7rNbtamF7_YjtndyBuRMJvBbdl/view?usp=sharing
+
+2. Problem Statement Document (PDF)  
+
+PFA attached document link:  
+
+https://drive.google.com/file/d/1DFDcgBTaAJmSZfcAtMhkOHumgBZlyu0C/view?usp=sharing
+
+3. AI Usage Report (PDF)  
+
+PFA attached document link:  
+
+https://drive.google.com/file/d/1sC92ce4VSuSfZOTW_GT54Fe17H8_mwVh/view?usp=sharing
+
+--------------------------------------------------
 
 ## Common Issues
 
@@ -176,5 +200,6 @@ ___
 ## Summary
 
 A portable, environment-agnostic carbon tracking platform built with modern web technologies. The system integrates data analytics and AI to provide actionable climate impact insights.
+
 
 
