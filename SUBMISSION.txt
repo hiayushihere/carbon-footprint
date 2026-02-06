@@ -63,15 +63,8 @@ Authentication → JWT
 AI Integration → Gemini API 
 
 --------------------------------------------------
-NOTES
---------------------------------------------------
 
-• Carbon calculations are rule-based and deterministic  
-• AI is used only for insights and recommendations  
-• No personal or sensitive data is shared with AI  
-• The system is environment-agnostic and runs via .env configuration  
-
---------------------------------------------------
 
 Thank you .
+
 
