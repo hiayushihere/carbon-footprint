@@ -43,7 +43,7 @@ This project builds an AI-powered Carbon Footprint Tracking system that:
 AI COMPONENT
 --------------------------------------------------
 
-Generative AI Recommendations → OpenAI / Gemini API  
+Generative AI Recommendations → Gemini API  
 
 AI is used to:
 
@@ -66,5 +66,6 @@ AI Integration → Gemini API
 
 
 Thank you .
+
 
 
